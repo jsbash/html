@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test02</title>
+    <style type="text/css">
+        #myDiv{
+            background-color: blue;
+            width: 100px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="myDiv" style="background-color: red; border: 1px solid black"></div>
+    <script>
+        var myDiv = document.getElementById("myDiv");
+        var computeStyle = document.defaultView.getComputeStyle(myDiv, null);
+        console.log(computeStyle.backgroundColor);
+        console.log(computeStyle.width);
+        console.log(computeStyle.height);
+        console.log(computeStyle.border);
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Monday</title>
+<script>
+    
+</script>
+</head>
+<body>
+    <div id="div01" class="bd user disable">Some text.</div>
+    <script>
+        var className = document.getElementById("div01").className.split(/\s+/);
+       // var pos = -1;
+       // var i, len;
+       // for (i = 0, len = className.length; i < len; i += 1){
+       //     if (className[i] === "user"){
+       //         pos = i;
+       //         break;
+       //     }
+       // }
+       // className.splice(i, 1);
+        document.getElementById("div01").classList.remove("user");
+        console.log(document.getElementById("div01").className);
+    </script>
+</body>
+</html>

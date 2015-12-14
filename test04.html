@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var supportsTraversals = document.implementation.hasFeature("Travesal", "2.0");
+    var supportsNodeIterator = (typeof document.createNodeIterator == "function");
+    var supportsTreeWalker = (typeof document.createTreeWalker == "function");
+    console.log(supportsTraversals);
+    console.log(supportsNodeIterator);
+    console.log(supportsTreeWalker);
+  </script>
+</body>
+</html>
